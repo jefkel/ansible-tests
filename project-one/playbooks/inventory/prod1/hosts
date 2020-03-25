@@ -1,0 +1,6 @@
+[all:vars]
+env=production
+clustername=prod1
+
+[prod1]
+localhost

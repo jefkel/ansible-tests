@@ -1,0 +1,5 @@
+[all:vars]
+env=lab
+
+[lab2]
+localhost

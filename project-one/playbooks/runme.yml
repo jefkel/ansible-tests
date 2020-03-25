@@ -1,0 +1,13 @@
+---
+## ansible-playbook -i inventory/prod1 runme.yml
+## ansible-playbook -i inventory/lab1 runme.yml
+## ansible-playbook -i inventory/lab2 runme.yml
+
+- name: Test Playbook
+  hosts: all
+  gather_facts: no
+
+  tasks:
+  - name: debug vars
+    debug:
+      msg: "{{ cluster.admins }}"

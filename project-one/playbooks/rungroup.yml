@@ -1,0 +1,13 @@
+---
+## ansible-playbook -i inventory/prod1 rungroup.yml -e "clustername=prod1"
+## ansible-playbook -i inventory/lab1 rungroup.yml -e "clustername=lab1"
+## ansible-playbook -i inventory/lab2 rungroup.yml -e "clustername=lab2"
+
+- name: Group test Playbook
+  hosts: "{{ clustername }}"
+  gather_facts: no
+
+  tasks:
+  - name: debug vars
+    debug:
+      msg: "{{ cluster.admins }}"

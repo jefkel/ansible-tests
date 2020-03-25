@@ -1,0 +1,8 @@
+---
+# Lab 1 override variables
+
+cluster:
+  admins:
+  - williamh
+  - sbarre
+
